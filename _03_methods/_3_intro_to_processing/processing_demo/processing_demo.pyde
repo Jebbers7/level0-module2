@@ -24,7 +24,7 @@ def draw():
     #         x,      y,   width, height
     ellipse(mouseX, mouseY,  100,   100)
     
-    # The code below checks of the mouse was pressed and draws
+    # The code below checks if the mouse was pressed and draws
     # a red ellipse over the blue one
     if mousePressed:
         fill('#FF0000')
@@ -34,4 +34,5 @@ def draw():
     # TODO: Add some other shapes with different sizes and colors
     # rect(x, y, width, height)
     # triangle(x1, y1, x2, y2, x3, y3)
+    # ellipse(mouseX, mouseY, 300, 400)
     

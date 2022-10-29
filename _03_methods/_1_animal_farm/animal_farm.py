@@ -13,7 +13,32 @@ def animals():
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
-
+    answer = simpledialog.askstring("Animal", "Which animal do you want?")
+    counter = 0
+    while counter < 10:
+        if(answer == "cow"):
+            show_image("cow.jpg")
+            moo()
+            answer = simpledialog.askstring("Animal", "Choose another animal!")
+        elif(answer == "duck"):
+            show_image("duck.jpg")
+            quack()
+            answer = simpledialog.askstring("Animal", "Choose another animal!")
+        elif(answer == "cat"):
+            show_image("cat.jpg")
+            meow()
+            answer = simpledialog.askstring("Animal", "Choose another animal!")
+        elif(answer == "dog"):
+            show_image("dog.jpg")
+            woof()
+            answer = simpledialog.askstring("Animal", "Choose another animal!")
+        elif(answer == "llama"):
+            show_image("llama.jpg")
+            llama_scream()
+            answer = simpledialog.askstring("Animal", "Choose another animal!")
+        elif(answer == "exit"):
+            exit()
+        counter += 1
     # TODO 2. Make it so that the user can keep entering new animals.
 
     # TODO 3. If the user enters 'exit', stop the program
